@@ -8,19 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.projeto.fast_api.services.ObrigacaoAcessoriaService;
 
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+
 @RestController
 @RequestMapping("/obrigacoes")
-@RequiredArgsConstructor
 public class ObrigacaoAcessoriaController {
 
-	private ObrigacaoAcessoriaService obrigacaoService;
-	
-	@PostMapping("/gerar/{empresaId}")
+    @Autowired
+    private ObrigacaoAcessoriaService obrigacaoService;
+
+    @PostMapping("/gerar/{empresaId}")
     public ResponseEntity<String> gerarObrigacoes(@PathVariable Long empresaId) {
         obrigacaoService.gerarObrigacoesPadrao(empresaId);
         return ResponseEntity.ok("Obrigações geradas com sucesso!");
     }
-	
-	
 }

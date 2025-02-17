@@ -20,9 +20,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ObrigacaoAcessoriaService {
 	
-	private final ObrigacaoAcessoriaRepository obrigacaoRepository;
+	private ObrigacaoAcessoriaRepository obrigacaoRepository;
 	
-    private final EmpresaRepository empresaRepository;
+    private  EmpresaRepository empresaRepository;
 
     public void gerarObrigacoesPadrao(Long empresaId) {
     	

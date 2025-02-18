@@ -2,6 +2,8 @@ package com.projeto.fast_api.services;
 
 
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -18,8 +20,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ObrigacaoAcessoriaService {
 	
+	@Autowired
 	private ObrigacaoAcessoriaRepository obrigacaoRepository;
 	
+	@Autowired
     private  EmpresaRepository empresaRepository;
 
     public void gerarObrigacoesPadrao(Long empresaId) {

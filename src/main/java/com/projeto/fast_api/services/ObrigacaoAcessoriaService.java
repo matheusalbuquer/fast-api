@@ -4,11 +4,9 @@ package com.projeto.fast_api.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import com.projeto.fast_api.entities.Periodicidade;
 
 import com.projeto.fast_api.entities.Empresa;
 import com.projeto.fast_api.entities.ObrigacaoAcessoria;
-import com.projeto.fast_api.entities.Periodicidade;
 import com.projeto.fast_api.repositories.EmpresaRepository;
 import com.projeto.fast_api.repositories.ObrigacaoAcessoriaRepository;
 

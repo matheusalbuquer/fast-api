@@ -23,3 +23,4 @@ public class ObrigacaoAcessoriaController {
         return ResponseEntity.ok("Obrigações geradas com sucesso!");
     }
 }
+
